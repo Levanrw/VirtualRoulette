@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Agregate\**" />
+    <EmbeddedResource Remove="Agregate\**" />
+    <None Remove="Agregate\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Options" Version="3.1.1" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="5.6.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\VirtualRoulette.DAL\VirtualRoulette.DAL.csproj" />
+    <ProjectReference Include="..\VirtualRoulette.Models\VirtualRoulette.Models.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="ge.singular.roulette">
+      <HintPath>..\DLL\ge.singular.roulette.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

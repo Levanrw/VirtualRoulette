@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <connectionString>server=localhost;database=roulette;uid=root;password=Matarebeli1</connectionString>
+</configuration>
