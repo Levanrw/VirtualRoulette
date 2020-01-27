@@ -108,7 +108,7 @@ namespace VirtualRoulette.Api
 
         }
 
-        // This method gets called by the runtime. 
+        // This method gets called by the runtime.. 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             app.UseSwagger();
